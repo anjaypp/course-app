@@ -1,0 +1,42 @@
+.hero-section {
+    background-image: url('/path/to/your/background-image.jpg');
+    background-size: cover;
+    color: brown;
+    font-size: 40px;
+    text-align: center;
+    padding: 100px 20px;
+
+}
+
+.explore-btn {
+    background-color: #8B0000;
+    color: #F5F5DC;
+    padding: 10px 20px;
+    margin-top: 3%;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.explore-btn:hover {
+    background-color: #F5F5DC;
+    color: #8B0000;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(345px, 1fr)); /* Responsive grid */
+    gap: 20px; /* Space between cards */
+    padding: 20px;
+    padding-top: 5%;
+}
+
+
+
+
+.data-rating {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #FFD700; /* Gold color for rating stars */
+}

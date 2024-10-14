@@ -1,0 +1,26 @@
+.navbar {
+    background-color: #8B0000 !important; 
+    border-bottom: 7px solid #F5F5DC !important; 
+}
+
+.text {
+    font-family: "Rubik", sans-serif !important;
+    font-size: 25px !important;
+    color: #F5F5DC !important; 
+}
+
+.nav-button {
+    background-color: #F5F5DC !important; 
+    color: #8B0000 !important; 
+    border: 2px solid #8B0000 !important; 
+    padding: 10px;
+    margin: 5px !important;
+    border-radius: 10px;
+    transition: background-color 0.3s, border-color 0.3s; 
+}
+
+.nav-button:hover {
+    background-color: #8B0000 !important;
+    color: #F5F5DC !important;
+    border-color: #F5F5DC !important; 
+}
