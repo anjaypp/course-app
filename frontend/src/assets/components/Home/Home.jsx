@@ -50,12 +50,17 @@ const Home = () => {
     return <CircularProgress />;
   }
 
+  const token = localStorage.getItem('token');
+  
+  if (!token) return null;
+
   return (
     <div>
       <div className="hero-section">
         <h1>Explore Our Courses</h1>
         <p>Find the perfect course to boost your skills and career.</p>
         {error && <Typography color="error">{error}</Typography>}{" "}
+        </div>
         {/* Display error message */}
         <div className="card-container">
           {courses.length === 0 ? (
@@ -78,7 +83,7 @@ const Home = () => {
                     {course.courseDescription}
                   </Typography>
                   <Typography className="data-rating">
-                    ⭐ {course.courseRating} / 5
+                     Category:{course.courseCategory}
                   </Typography>
                   <Button
                     variant="contained"
@@ -97,7 +102,6 @@ const Home = () => {
             ))
           )}
         </div>
-      </div>
     </div>
   );
 };
